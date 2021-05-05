@@ -3,8 +3,8 @@
             cd pybackdoor
             sudo apt-get update && sudo apt-get upgrade
             sudo apt-get install metasploit-framework
-            chmod +x *
-           ./pybackdoor.sh
+            sudo chmod +x *
+            sudo ./pybackdoor.sh
 --------------------------------------------------------------------------
 
 with this tool you can inject a metasploit payload of any python program
