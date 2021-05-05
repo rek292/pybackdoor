@@ -26,7 +26,7 @@ sleep 0.5
 echo "[ + ] Shellcode encrypted ..." | pv -qL 10
 echo ""
 sleep 1
-echo "[ + ] payload saved in folder --> $PWD/$(basename $pyfile)" | pv -qL 10
+echo "[ + ] backdoor saved in folder --> $PWD/$(basename $pyfile)" | pv -qL 10
 echo ""
 sleep 1.5
 echo "[ + ] Cleaning up ... " | pv -qL 10
