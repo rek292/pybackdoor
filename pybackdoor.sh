@@ -39,7 +39,7 @@ sleep 1.1
 x=0
 while [ $x = 0 ]
 do
-read -p "[ ? ] Do you want to start Listener? [ Y/n ] " listener1
+read -p "[ ? ] Do you want to start Listener? [ Y/n ] : " listener1
 	case "$listener1" in
 n)
 echo '' && exit
