@@ -24,7 +24,10 @@ if [ -f $pyfile ]; then
         echo ""
 else
         echo "$red[ - ] File $(basename $pyfile) Not Found!"
+        echo "" 
+	echo "$red[ - ] Exiting ..." | pv -qL 10
         echo ""
+        sleep 0.5
 exit
 fi
 sleep 0.5
