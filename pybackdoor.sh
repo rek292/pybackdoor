@@ -1,5 +1,5 @@
 #!/bin/bash
-# pybackdoor V1.0
+# pybackdoor V2.0
 # colors
 green=$'\e[0;32m'
 red=$'\e[1;31m'
