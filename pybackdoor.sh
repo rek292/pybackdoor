@@ -11,7 +11,9 @@ white=$'\e[1;37m'
 STOP="\e[0m"
 
 clear
+printf "$cyan"
 figlet -f big PYBACKDOOR
+printf "$STOP"
 echo ""
 read -p "$cyan[ + ] LHOST : " lh
 echo ""
