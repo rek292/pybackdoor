@@ -26,7 +26,7 @@ read -p "$cyan[ + ] LPORT : " lp
 echo ""
 read -p "$cyan[ + ] path to Original File [ PYTHON ] : " pyfile
 echo ""
-read -p "$cyan[ + ] Name File : " pyname
+read -p "$cyan[ + ] Name File $red[ WARNING WITHOUT EXTENSION .py ] $cyan: " pyname
 echo ""
 sleep 0.7
 if [ -f $pyfile ]; then
