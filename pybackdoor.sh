@@ -10,6 +10,11 @@ lightgreen=$'\e[1;32m'
 white=$'\e[1;37m'
 STOP="\e[0m"
 
+sleep 0.7
+echo ""
+echo "$green[ + ] Starting Service ..." | pv -qL 9
+echo ""
+sleep 1.5
 clear
 printf "$cyan"
 figlet -f big PYBACKDOOR
