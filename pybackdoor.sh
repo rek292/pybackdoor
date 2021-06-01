@@ -56,7 +56,7 @@ sleep 0.5
 echo "$lightgreen[ + ] Shellcode encrypted ..." | pv -qL 10
 echo ""
 sleep 1
-echo "$lightgreen[ + ] Backdoor saved in folder --> $green$PWD/$pyname.py" | pv -qL 10
+echo "$lightgreen[ + ] Backdoor saved in folder --> $blue$PWD/$pyname.py" | pv -qL 10
 echo ""
 sleep 1.5
 echo "$lightgreen[ + ] Cleaning up ... " | pv -qL 10
