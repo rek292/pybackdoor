@@ -24,7 +24,7 @@ read -p "$cyan[ + ] LHOST : " lh
 echo ""
 read -p "$cyan[ + ] LPORT : " lp
 echo ""
-read -p "$cyan[ + ] path to Original File [ PYTHON ] : " pyfile
+read -p "$cyan[ + ] path to Original File $lightgreen[ PYTHON ] $cyan: " pyfile
 echo ""
 read -p "$cyan[ + ] Name File $red[ WARNING WITHOUT EXTENSION .py ] $cyan: " pyname
 echo ""
